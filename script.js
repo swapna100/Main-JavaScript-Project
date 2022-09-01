@@ -26,7 +26,7 @@ function playRound(playerSelection, computerSelection)
             {
                 result = " You Win!! Paper beats Rock! ";
                 userScore += 1;
-                compScore -= 1;
+                //compScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
                  
             }
@@ -34,20 +34,20 @@ function playRound(playerSelection, computerSelection)
             {
                 result = " You loose!! Paper beats Rock! ";
                 compScore += 1;
-                userScore -= 1;
+                //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
         else if((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))
             {
                 result = " You loose!! Rock beats Scissors! ";
                 compScore += 1;
-                userScore -= 1;
+                //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
         else if((playerSelection == 'ROCK')&&(computerSelection =='SCISSORS'))
             {
                 result = " You Win!! Rock beats Scissors! ";
-                compScore -= 1;
+                //compScore -= 1;
                 userScore += 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
@@ -55,13 +55,13 @@ function playRound(playerSelection, computerSelection)
             {
                 result = " You loose!! Scissors beats Paper! ";
                 compScore += 1;
-                userScore -= 1;
+                //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
         else if((playerSelection == 'SCISSORS')&&(computerSelection =='PAPER'))
             {
-                result = "Scissors beats Paper! You Win!!";
-                compScore -= 1;
+                result = "  You Win!! Scissors beats Paper!";
+                //compScore -= 1;
                 userScore += 1;
                 return(" Your Score: " +userScore+ " Computer Score: " +compScore+"  "+ result);
             }
@@ -80,7 +80,7 @@ function game()
         playerSelection = playerSelection.toUpperCase();
         // calling the playRound to play
         let play = playRound(playerSelection, computerSelection);
-        console.log(play);
+        //console.log(play);
         alert(play);
         }
         //Adding total scores 
@@ -89,15 +89,16 @@ function game()
         //comparing user score with computer score
     if (userScoretotal > compScoretotal)
         {
-        console.log(" You are the Winner! with total score: "+userScoretotal);
+        //console.log(" You are the Winner! with total score: "+userScoretotal);
         alert(" You are the Winner! with total score:  "+userScoretotal);
         }
     else
         {
-        console.log(" Computer is the Winner! with total score: "+compScoretotal);
+        //console.log(" Computer is the Winner! with total score: "+compScoretotal);
         alert(" Computer is the Winner! with total score: "+compScoretotal);
         }
     }
 //calling the game to paly 5 rounds    
-game();
+ game();
+
 
