@@ -85,6 +85,7 @@ function game()
         var play;
         play = playRound(playerSelection, computerSelection);
         console.log(play);
+        alert(play);
         
                 //alert("You Scored" +userScore);
                 //alert("Computer Scored" +compScore);
@@ -95,11 +96,13 @@ function game()
     {
         //alert("You are the Winner! with total = "+userScoretotal);
         console.log("You are the Winner! with total = "+userScoretotal);
+        alert("You are the Winner! with total = "+userScoretotal);
     }
     else
     {
         //alert("Computer is the Winner! with total = "+compScoretotal);
         console.log("Computer is the Winner! with total = "+compScoretotal);
+        alert("Computer is the Winner! with total = "+compScoretotal);
     }
 }
 
