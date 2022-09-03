@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection)
                ((playerSelection == 'SCISSORS')&&(computerSelection =='PAPER')))
 
             {
-                result = ` You Win!! ${playerSelection} ${computerSelection} `;
+                result = ` You Win!! ${playerSelection} beats ${computerSelection} `;
                 userScore += 1;
                 //compScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
