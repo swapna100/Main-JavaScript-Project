@@ -100,7 +100,7 @@ function game()
     else if(userScoretotal == compScoretotal)
         {
         //console.log(" Computer is the Winner! with total score: "+compScoretotal);
-        alert(" Both of you scores same!! with computer score: "+compScoretotal +" = "+ userScoretotal);
+        alert(" Both of your scores are same!! Computer score: "+compScoretotal +" equals to Player score: "+ userScoretotal);
         }
     else{
         alert(" Computer is the Winner! with total score: " +compScoretotal);
