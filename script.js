@@ -22,7 +22,10 @@ function playRound(playerSelection, computerSelection)
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
                 
             }
-        else if((playerSelection == 'PAPER')&&(computerSelection =='ROCK'))
+        else if(((playerSelection == 'PAPER')&&(computerSelection =='ROCK'))||
+               ((playerSelection == 'ROCK')&&(computerSelection =='SCISSORS'))||
+               ((playerSelection == 'SCISSORS')&&(computerSelection =='PAPER')))
+
             {
                 result = " You Win!! Paper beats Rock! ";
                 userScore += 1;
@@ -30,14 +33,16 @@ function playRound(playerSelection, computerSelection)
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
                  
             }
-        else if((playerSelection =='ROCK') && (computerSelection == 'PAPER'))
+        else if(((playerSelection =='ROCK') && (computerSelection == 'PAPER'))||
+               ((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))||
+               ((playerSelection == 'PAPER')&&(computerSelection =='SCISSORS')))
             {
                 result = " You loose!! Paper beats Rock! ";
                 compScore += 1;
                 //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
-        else if((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))
+        /* else if((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))
             {
                 result = " You loose!! Rock beats Scissors! ";
                 compScore += 1;
@@ -64,7 +69,7 @@ function playRound(playerSelection, computerSelection)
                 //compScore -= 1;
                 userScore += 1;
                 return(" Your Score: " +userScore+ " Computer Score: " +compScore+"  "+ result);
-            }
+            } */
                
     }
 
@@ -95,10 +100,10 @@ function game()
     else if(userScoretotal == compScoretotal)
         {
         //console.log(" Computer is the Winner! with total score: "+compScoretotal);
-        alert(" Both of you are Winners!! with total score: "+compScoretotal);
+        alert(" Both of you scores same!! with computer score: "+compScoretotal +" = "+ userScoretotal);
         }
     else{
-        alert(" Computer is the Winner! with total score: "+compScoretotal);
+        alert(" Computer is the Winner! with total score: " +compScoretotal);
         }    
     }
 //calling the game to paly 5 rounds    
