@@ -42,34 +42,6 @@ function playRound(playerSelection, computerSelection)
                 //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
             }
-        /* else if((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))
-            {
-                result = " You loose!! Rock beats Scissors! ";
-                compScore += 1;
-                //userScore -= 1;
-                return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
-            }
-        else if((playerSelection == 'ROCK')&&(computerSelection =='SCISSORS'))
-            {
-                result = " You Win!! Rock beats Scissors! ";
-                //compScore -= 1;
-                userScore += 1;
-                return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
-            }
-        else if((playerSelection == 'PAPER')&&(computerSelection =='SCISSORS'))
-            {
-                result = " You loose!! Scissors beats Paper! ";
-                compScore += 1;
-                //userScore -= 1;
-                return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
-            }
-        else if((playerSelection == 'SCISSORS')&&(computerSelection =='PAPER'))
-            {
-                result = "  You Win!! Scissors beats Paper!";
-                //compScore -= 1;
-                userScore += 1;
-                return(" Your Score: " +userScore+ " Computer Score: " +compScore+"  "+ result);
-            } */
                
     }
 
