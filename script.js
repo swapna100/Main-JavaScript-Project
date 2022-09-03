@@ -92,11 +92,14 @@ function game()
         //console.log(" You are the Winner! with total score: "+userScoretotal);
         alert(" You are the Winner! with total score:  "+userScoretotal);
         }
-    else
+    else if(userScoretotal == compScoretotal)
         {
         //console.log(" Computer is the Winner! with total score: "+compScoretotal);
-        alert(" Computer is the Winner! with total score: "+compScoretotal);
+        alert(" Both of you are Winners!! with total score: "+compScoretotal);
         }
+    else{
+        alert(" Computer is the Winner! with total score: "+compScoretotal);
+        }    
     }
 //calling the game to paly 5 rounds    
  game();
