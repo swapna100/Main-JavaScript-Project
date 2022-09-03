@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection)
                ((playerSelection == 'SCISSORS')&&(computerSelection =='PAPER')))
 
             {
-                result = " You Win!! Paper beats Rock! ";
+                result = ` You Win!! ${playerSelection} ${computerSelection} `;
                 userScore += 1;
                 //compScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection)
                ((playerSelection == 'SCISSORS')&&(computerSelection =='ROCK'))||
                ((playerSelection == 'PAPER')&&(computerSelection =='SCISSORS')))
             {
-                result = " You loose!! Paper beats Rock! ";
+                result = ` You loose!! ${computerSelection} beats ${playerSelection} `;
                 compScore += 1;
                 //userScore -= 1;
                 return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
