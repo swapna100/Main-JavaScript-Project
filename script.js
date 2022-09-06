@@ -17,8 +17,7 @@ function playRound(playerSelection, computerSelection)
         {
             result = ` You Win!! ${playerSelection} beats ${computerSelection} `;
             userScore += 1;
-        //compScore -= 1;
-        return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
+            return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
         }
         else if((playerSelection =='ROCK') && (computerSelection == 'PAPER')||
             (playerSelection == 'SCISSORS')&&(computerSelection =='ROCK')||
@@ -26,7 +25,6 @@ function playRound(playerSelection, computerSelection)
         {
             result = ` You loose!! ${computerSelection} beats ${playerSelection} `;
             compScore += 1;
-            //userScore -= 1;
             return(" Your Score " +userScore+ " Computer Score " +compScore+"  "+ result);
         }
         else
@@ -46,7 +44,7 @@ function game()
             computerSelection = computerSelection.toUpperCase(); 
             //asking user to select
             let playerSelection = prompt('Type "Rock" or "Paper" or "Scissors"'); 
-            playerSelection = playerSelection.toUpperCase();
+            playerSelection = playerSelection.toUpperCase().trim();
             // calling the playRound to play
             let play = playRound(playerSelection, computerSelection);
             //console.log(play);
