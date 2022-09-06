@@ -1,9 +1,6 @@
 let userScore = 0; //user score
 let compScore = 0;  //computer score
 let result ='';     //result from each round 
-let userScoretotal = 0; //total user score
-let compScoretotal = 0; //total computer score
-
 // function containing the selection of computer
 function computerPlay()
     {
